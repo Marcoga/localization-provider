@@ -33,7 +33,7 @@ npm start
 
 ## Discussion
 ### Should it include Bootstrap?
-Most of my needs are met with ```material-ui``` and css, however there might be some cases where bootstrap is actually usefull, for example for tables, tabs (I'm not yet quite sold on the ```material-ui``` tabs), wells, ...
+Most of my needs are met with ```material-ui``` and css, however there might be some cases where bootstrap is actually useful, for example for tables, tabs (I'm not yet quite sold on the ```material-ui``` tabs), wells, ...
 
 I am currently trending to publishing my own lib with the bootstrap components that I need. In this lib I could use the ```saas``` parts of bootstrap that I need.
 
