@@ -1,15 +1,18 @@
 import React, { Component } from 'react'
 import { Provider } from 'react-redux'
-import CounterApp from './CounterApp'
+import { Router } from 'react-router'
+import routes from '../routes'
 
 export default class Root extends Component {
   render() {
-    const { store } = this.props
+    const { store, history } = this.props
     return (
       <Provider store={store}>
-        <div>
-          <CounterApp />
-        </div>
+        <Router
+          history={history}
+          store={store}
+          routes={routes}
+        />
       </Provider>
     )
   }
