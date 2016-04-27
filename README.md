@@ -28,8 +28,8 @@ npm start
 * [x] include routes
 * [x] include redux-react-router reducer
 * [x] add a default ```material-ui``` theme in the AppContainer
-* [ ] fix the release script
-* [ ] add index_template.html
+* [x] fix the release script
+* [x] add index_template.html
 
 ## Discussion
 ### Should it include Bootstrap?
