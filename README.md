@@ -15,6 +15,15 @@ Even though there are many many redux boilerplates repos out there, none of them
 * React Hot Loader 3
 * It uses the Chrome Redux Devtools Extension
 
+## Usage
+```
+git clone https://github.com/Marcoga/redux-boilerplate.git
+cd redux-boilerplate
+
+npm install
+npm start
+```
+
 ## Todo
 * [x] include routes
 * [x] include redux-react-router reducer
