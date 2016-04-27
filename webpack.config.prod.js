@@ -54,7 +54,7 @@ module.exports = {
     }),
 
     new HtmlWebpackPlugin({
-      favicon: './images/CoPlannerNeu32.png',
+      favicon: './images/logo.png',
       template: 'index_template.html'
     })
   ]
