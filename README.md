@@ -18,7 +18,7 @@ Even though there are many many redux boilerplates repos out there, none of them
 ## Todo
 * [x] include routes
 * [x] include redux-react-router reducer
-* [ ] add a default ```material-ui``` theme in the AppContainer
+* [x] add a default ```material-ui``` theme in the AppContainer
 
 ## Discussion
 ### Should it include Bootstrap?
