@@ -15,9 +15,6 @@ export default class App extends Component {
             <li>
               <Link to='/home'>Home</Link>
             </li>
-            <li>
-              <Link to='/counter'>Counter</Link>
-            </li>
           </ul>
           <Paper>
             {this.props.children}
