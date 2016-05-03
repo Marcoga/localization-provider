@@ -6,6 +6,10 @@ import { AppContainer } from 'react-hot-loader'
 import configureStore from './store/configureStore'
 import Root from './containers/Root'
 
+if (process.env.NODE_ENV !== 'production') {
+  window.ReactPerf =  require('react-addons-perf')
+}
+
 const store = configureStore()
 const history = syncHistoryWithStore(hashHistory, store)
 

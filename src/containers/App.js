@@ -26,7 +26,11 @@ export default class App extends Component {
             lang={lang}>
             <div>
               <Link to={`${lang}/home`}>Home</Link>
-              <Paper>
+              <Paper
+                style={{
+                  padding: '20px',
+                  marginTop: '20px',
+                }}>
                 {children}
               </Paper>
             </div>

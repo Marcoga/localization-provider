@@ -57,6 +57,7 @@
     "image-webpack-loader": "^1.6.3",
     "json-loader": "^0.5.4",
     "node-libs-browser": "^1.0.0",
+    "react-addons-perf": "^15.0.2",
     "react-hot-loader": "^3.0.0-alpha.8",
     "redux-devtools": "^3.0.1",
     "redux-devtools-dock-monitor": "^1.0.1",
