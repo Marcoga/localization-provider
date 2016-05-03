@@ -1,6 +1,5 @@
 import React, { Component, Children, PropTypes } from 'react'
-import { IntlProvider } from 'react-intl'
-import { addLocaleData } from 'react-intl'
+import { IntlProvider, addLocaleData } from 'react-intl'
 import en from 'react-intl/locale-data/en'
 import de from 'react-intl/locale-data/de'
 import es from 'react-intl/locale-data/es'
