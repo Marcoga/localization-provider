@@ -1,4 +1,11 @@
 import React, { Component, Children, PropTypes } from 'react'
+import { IntlProvider } from 'react-intl'
+import { addLocaleData } from 'react-intl'
+import en from 'react-intl/locale-data/en'
+import de from 'react-intl/locale-data/de'
+import es from 'react-intl/locale-data/es'
+
+addLocaleData([...en, ...de, ...es])
 
 export default class LocalizationProvider extends Component {
   static propTypes = {
@@ -25,7 +32,9 @@ export default class LocalizationProvider extends Component {
 
   render() {
     return (
-      Children.only(this.props.children)
+      <IntlProvider locale={this.props.lang}>
+        {this.props.children}
+      </IntlProvider>
     )
   }
 }
