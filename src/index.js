@@ -10,20 +10,25 @@ const store = configureStore()
 const history = syncHistoryWithStore(hashHistory, store)
 
 render(
-  <AppContainer
-    component={Root}
-    props={{ store, history }}
-  />,
+  <AppContainer>
+    <Root
+      store={store}
+      history={history}
+    />
+  </AppContainer>,
   document.getElementById('root')
 )
 
 if (module.hot) {
   module.hot.accept('./containers/Root', () => {
+    const NextApp = require('./containers/Root').default
     render(
-      <AppContainer
-        component={require('./containers/Root').default}
-        props={{ store }}
-      />,
+      <AppContainer>
+        <NextApp
+          store={store}
+          history={history}
+        />
+      </AppContainer>,
       document.getElementById('root')
     )
   })
